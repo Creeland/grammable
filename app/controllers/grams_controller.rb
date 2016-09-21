@@ -1,7 +1,7 @@
 class GramsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create]
 
-  
+
   def index
   end
 
@@ -17,6 +17,13 @@ class GramsController < ApplicationController
     else 
       # if it hasn't then adds an error message, simple_form helps deal with it. 
       render :new, status: :unprocessable_entity
+    end 
+  end
+
+  def show
+    @gram = Gram.find_by_id(params[:id])
+    if @gram.blank?
+      render text: 'Not Found :(', status: :not_found
     end 
   end
 
