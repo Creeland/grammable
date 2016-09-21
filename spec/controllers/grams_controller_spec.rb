@@ -58,4 +58,14 @@ RSpec.describe GramsController, type: :controller do
       expect(response).to have_http_status(:not_found)
     end 
   end 
+
+  describe "grams@edit action" do
+    it "Should successfully show the edit form if the gram is found"
+
+    end 
+
+    it "Should return a 404 message if the gram is not found"
+
+    end   
+  end
 end
