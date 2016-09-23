@@ -30,6 +30,7 @@ gem 'rails_12factor', group: :production
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
+  gem 'pry'
 end
 
 gem 'bootstrap-sass', '~> 3.2.0'
@@ -39,6 +40,9 @@ gem 'simple_form'
 gem 'devise'
 
 gem "factory_girl_rails", "~> 4.0"
+
+gem 'carrierwave'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
