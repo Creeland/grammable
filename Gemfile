@@ -43,6 +43,10 @@ gem "factory_girl_rails", "~> 4.0"
 
 gem 'carrierwave'
 
+gem "figaro"
+
+gem "fog"
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
